@@ -1,0 +1,30 @@
+site_name: Minimal MkDocs
+
+site_url: https://github.com/melissawm/minimalmkdocs
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - API Documentation: apidocs.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+
+plugins:
+  - include-markdown
+  - autorefs
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+          inventories:
+            - url: https://numpy.org/doc/stable/objects.inv
+          options:
+            docstring_style: google
+            members_order: "source"
