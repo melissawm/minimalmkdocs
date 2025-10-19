@@ -27,8 +27,6 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
       - run:
           name: Create environment
           command: |
