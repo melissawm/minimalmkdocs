@@ -216,4 +216,4 @@ plugins:
             - url: https://numpy.org/doc/stable/objects.inv
 ```
 
-Now, you can link to Python standard library objects using the syntax `[object][]`. For example, to link to the `array` class in NumPy, you can use `[numpy.array][]` to get [numpy.array][].
+Now, you can link to NumPy objects, for example, using the syntax `[object][]`. For example, to link to the `array` class in NumPy, you can use `[numpy.array][]` to get [numpy.array][].
